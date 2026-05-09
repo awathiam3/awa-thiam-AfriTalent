@@ -1,24 +1,235 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AfriTalent — Accueil</title>
-<!-- Bootstrap 5 via CDN : feuille de style -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
-<!-- Votre feuille de style personnelle -->
-<link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTalent — Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap 5 via CDN : feuille de style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Votre feuille de style personnelle -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<!-- Le contenu de la page sera ajoute ici -->
-<!-- Bootstrap 5 via CDN : script JavaScript -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
-></script>
+    <!-- Le contenu de la page sera ajoute ici -->
+    <!-- Navigation Bootstrap commune a toutes les pages -->
+     <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AfriTalent</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">A
+                            propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="freelances.html" class="btn btn-light">Rejoindre AfriTalent</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!-- Contenu principal -->
+    <main>
+        <!-- Section Hero : accroche principale -->
+        <section id="hero">
+            <div class="container py-5">
+                <h1>Trouvez le talent africain qu'il vous faut</h1>
+                <p>AfriTalent connecte les freelances africains aux clients du
+                    monde entier.</p>
+                <a href="freelances.html" class="btn btn-info">Je suis Freelances</a>
+                <a href="freelances.html" class="btn btn-info">Je cherche un Freelance</a>
+            </div>
+            <div class="container py-5">
+                <h2>AfriTalent en chiffres</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 py-5">
+                        <p><strong>1 200+ Freelances</strong></p>
+                    </div>
+                    <div class="col-md-4 py-5">
+                        <p><strong>45 Pays representes</strong></p>
+                    </div>
+                    <div class="col-md-4 py-5">
+                        <p><strong>3 800+ Projets realises</strong></p>
+                    </div>
+                </div>
+        </section>
+        <!-- section comment ça marche -->
+        <section>
+            <h2>Comment ça marche</h2>
+            <div class="container py-5">
+                <div class="bento">
+                    <div class="card card1">
+                        <h2>01</h2>
+                        <h3>Créer un compte</h3><i class="bi bi-person-plus"></i>
+                        <p>Inscrivez-vous gratuitement en quelques <br>
+                            minutes et créez votre profil en tant que <br>
+                            client ou freelance.</p>
+                    </div>
+                    <div class="card card2">
+                        <h2>02</h2>
+                        <h3>Choisir un freelance</h3><i class="bi bi-search"></i>
+                        <p>Parcourez les profils,consultez les <br>
+                            compétences,les avis et choisissez <br>
+                            le freelances qui correspond à <br>
+                            votre projet.</p>
+                    </div>
+                    <div class="card card3">
+                        <h2>03</h2>
+                        <h3>Discuter du projet</h3><i class="bi bi-chat-dots"></i>
+                        <p>Echangez avec la freelance, <br>
+                            définissez les détails,le budjet <br>
+                            et le delai pour votre projet.</p>
+                    </div>
+                    <div class="card card4">
+                        <h2>04</h2>
+                        <h3>Lancer le projet</h3><i class="bi bi-rocket"></i>
+                        <p>Validez la collaboration et le freelance commence à travailler. <br>
+                            Suivez l'avancement et recevez un travail de qualite.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Section Services -->
+        <section id="services">
+            <div class="container py-5">
+                <h1>Nos domaines d'expertise</h1>
+                <h2>Découvrez les talents pour tout vos besions</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/programmation.png" width="75" height="75" alt="">
+                        <h3>Developpement Web</h3>
+                        <p>Sites vitrine, applications web, e-commerce. <br>2500freelances</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/en-hausse.png" 75" height="75" alt="">
+                        <h3>Design Graphique</h3>
+                        <p>Identite visuelle, UI/UX, illustrations. <br>1500freelances</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/palette-de-couleurs.png" width="75" height="75" alt="">
+                        <h3>Marketing Digital</h3>
+                        <p>Reseaux sociaux, SEO, campagnes publicitaires. <br>3000freelances</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/robot.png" width="75" height="75" alt="">
+                        <h3>Data & IA</h3>
+                        <p>Analyse & Intelligence. <br>1500freelances</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/storage.png" width="75" height="75" alt="">
+                        <h3>Rédaction</h3>
+                        <p>Creation de contenus. <br>2000freelances</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/upload.png" width="75" height="75" alt="">
+                        <h3>Cloude & DevOps</h3>
+                        <p>Serveurs & Déploiement. <br>2500freelances</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Temoignages -->
+         <h2>Ce que disent nos clients</h2>
+         <section class="container" >
+         <div id="carouselExample" class="carousel slide">
+     <div class="carousel-inner">
+     <div class="carousel-item active">
+        <blockquote class="blockquote">
+                    <p>Trés bon services</p>
+                        <img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt="">
+      <img src="images//profil10.jpg" class="d-block w-100 " alt="..." height="750rem">
+    </div>
+    <div class="carousel-item">
+        <p>Trés bon services</p>
+                        <img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt="">
+      <img src="images/membre12.jpg" class="d-block w-100" alt="..." >
+    </div>
+    <div class="carousel-item">
+        <p>Trés bon services</p>
+                        <img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt=""><img src="etoile.png" width="25" height="25" alt="">
+      <img src="images/membre2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+    
+        <!-- section cta -->
+        <section class="container py-5">
+            <h1 class="text-center">Donnez vie à vos projets avec les meilleurs talent</h1>
+            <a href="contact.html" class="btn btn-info">Sinscrire maintenant</a>
+        </section>
+        <!-- Pied de page -->
+        <footer class="bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <h4>AfriTalent</h4>
+                        <p>La plateforme qui connecte les freelances africains aux entreprises</p>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" width="22"
+                                height="22" alt=""></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" width="22"
+                                height="22" alt=""></a>
+                        <a href="https://www.twitter/" target="_blank"><img src="images/twitter.png" width="22"
+                                height="22" alt=""></a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h3>Liens utiles</h3>
+                        <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A
+                                propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h4>Ressources</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="nav-link" href="">FAQ</a></li>
+                            <li><a class="nav-link"  href="">Blog</a></li>
+                            <li><a class="nav-link" href="">Politique de confidentialité</a></li>
+                            <li><a class="nav-link" href="">Condition d'utlisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6 ">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled" >
+                            <li><a  class="nav-link "href="mailto:Contact@AfriTalent.com"><i class="bi bi-envelope me-2"></i>Contact@AfriTalent.com</a></li>
+                            <li><a  class="nav-link"href=""><i class="bi bi-telephone me-2"></i>+221 76 640 02 73</a></li>
+                            <p> <i class="bi bi-geo-alt me-2"></i>Dakar,Sénégal</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">&copy; 2025 AfriTalent. Tous droits reserves.</p>
+        </footer>
+        <!-- Bootstrap 5 via CDN : script JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+"></script>
 
  <!-- Votre script JavaScript  -->
-<script src="js/main.js"></script>
+<script src=" js/main.js"></script>
+
 </body>
+
 </html

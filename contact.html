@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+     rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AfriTalent — Accueil</title>
@@ -14,9 +17,134 @@ rel="stylesheet">
 <body>
 <!-- Le contenu de la page sera ajoute ici -->
 <!-- Bootstrap 5 via CDN : script JavaScript -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
-></script>
+ <header>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+       <a class="navbar-brand" href="index.html">AfriTalent</a>
+       <button class="navbar-toggler" type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navMenu"
+               aria-controls="navMenu"
+               aria-expanded="false"
+               aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active"
+href="index.html">Accueil</a></li>
+                 <li class="nav-item"><a class="nav-link"
+href="freelances.html">Freelances</a></li>
+                 <li class="nav-item"><a class="nav-link"
+href="tarifs.html">Tarifs</a></li>
+                 <li class="nav-item"><a class="nav-link" href="about.html">A
+propos</a></li>
+                 <li class="nav-item"><a class="nav-link"
+href="contact.html">Contact</a></li>
+                  </ul>
+                  <a href="freelances.html" class="btn btn-light">Rejoindre AfriTalent</a>
+             </div>
+        </div>
+    </nav>
+    </header>
+    <!-- ============formulaire============= -->
+<main class="container my-5">
+    <div class="row">
+        <div class="col-md-6 col-12">
+        <form action="#">
+          <h1>Formulaire de contact</h1>
+          <div>
+            <label for="Nom"></label>
+            <input type="text" class="form-control" placeholder="Nom">
+            </div>
+            <div>
+            <label for="Prenom"></label>
+            <input type="text"  class="form-control" placeholder="Prenom">
+            </div>
+            <div class="mb-3">
+            <label for="Email"></label>
+            <input type="text"  class="form-control" placeholder="Email">
+            </div>
+            <div class="mb-3">
+            <select  class="form-control">
+                <option value="">Partenariat</option>
+                <option value="">Probleme thechnique</option>
+                <option value="">Fraude</option>
+            </select>
+            </div>
+            <div class="mb-3">
+            <textarea class="form-control" placeholder="Message" ></textarea>
+        </div>
+        <div>
+            <button type="submit">Envoyer</button>
+        </div>
+        </form>
+        </div>
+    <!-- ===========information============ -->
+     <div class="col-md-6 col-12">
+        <h1>Information</h1>
+        <ul class="list-unstyled" >
+                            <li><a  class="nav-link "href="mailto:Contact@AfriTalent.com"><i class="bi bi-envelope me-2"></i>Contact@AfriTalent.com</a></li>
+                            <li><a  class="nav-link"href=""><i class="bi bi-telephone me-2"></i>+221 76 640 02 73</a></li>
+                            <p> <i class="bi bi-geo-alt me-2"></i>Dakar rue 124</p>
+                        </ul>
+      </div>
+    </div>
+</main>
+         <!-- ==========carte============ -->
+    <section>
+      <div class="carte" style="text-align: center;">
+      <h2>Nous localiser</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.497318469535!2d-17.5225159!3d14.740988799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec11375cea8035b%3A0x179e67ddc78044ce!2sRestaurant%20Le%20Carr%C3%A9%20Dakar!5e0!3m2!1sfr!2ssn!4v1774802611535!5m2!1sfr!2ssn" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade "></iframe>
+    </div>
+    </section>
+    <footer class="bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <h4>AfriTalent</h4>
+                        <p>La plateforme qui connecte les freelances africains aux entreprises</p>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" width="22"
+                                height="22" alt=""></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" width="22"
+                                height="22" alt=""></a>
+                        <a href="https://www.twitter/" target="_blank"><img src="images/twitter.png" width="22"
+                                height="22" alt=""></a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h3>Liens utiles</h3>
+                        <ul class="list-unstyled">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A
+                                propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h4>Ressources</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="nav-link" href="">FAQ</a></li>
+                            <li><a class="nav-link"  href="">Blog</a></li>
+                            <li><a class="nav-link" href="">Politique de confidentialité</a></li>
+                            <li><a class="nav-link" href="">Condition d'utlisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6 ">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled" >
+                            <li><a  class="nav-link "href="mailto:Contact@AfriTalent.com"><i class="bi bi-envelope me-2"></i>Contact@AfriTalent.com</a></li>
+                            <li><a  class="nav-link"href=""><i class="bi bi-telephone me-2"></i>+221 76 640 02 73</a></li>
+                            <p> <i class="bi bi-geo-alt me-2"></i>Dakar,Sénégal</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">&copy; 2025 AfriTalent. Tous droits reserves.</p>
+        </footer>
+    <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
  <!-- Votre script JavaScript  -->
 <script src="js/main.js"></script>

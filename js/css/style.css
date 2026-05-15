@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+   top:0;
+   position:   fixed;
+   width: 100%; 
+   z-index: 9;
+   background-color: #3873cc;
+
+ }
+ 
+:root{
+  --lighblue:hsl(195, 78%, 70%);
+  --primary: #3873cc;
+  --warning:  #eb9b07f1;
+  --success: #198754;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #212529; 
+  
+  --font-family-tire:"Playfair", serif;
+  --font-family-body:'poppins' ,sans-serif;
+
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 40px;
+
+  --text-sm: 14px;
+  --text-md: 18px;
+  --text-lg: 32px;
+  --text-xl: 55px;
+    }
+    body{
+      background-color:#FFFDF2;
+      font-family: var(--font-family-body);
+    }
+    h1{
+      font-size: var(--text-xl);
+      font-family: var(--font-family-tire);
+    }
+    h2{
+      font-size: var(--text-lg);
+      font-family: var(--font-family-tire);
+    }
+    .btn{
+        background-color: var(--lighblue);
+    }
+    .navbar-brand{
+      color: rgb(236, 157, 10);
+      font-size: 1.5rem; ;
+    }
+    /* =============partie index============== */
+   .hero1{
+   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/background.png');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
+   color: #f8f9fa;
+   margin-top: var(--space-lg);
+   } 
+   #services img{
+    height: 75px;
+    width: 75px;
+   }
+
+.icone1{
+  color: yellow;
+}
+.icone2{
+  color: green;
+}
+.icone3{
+  color: var(--primary);
+}
+.icone4{
+  color: purple;
+}
+.fictif{
+  font-family: var(--font-family-tire);
+}
+   /* ==========partie about======== */
+
+
+   /* =========partie tarif======== */
+   .blockquote{
+    height: 100vh ;
+    object-fit: cover;
+   }

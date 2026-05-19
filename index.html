@@ -93,55 +93,63 @@
           <div class="col-md-4 py-5 mt-5">
             <h3><strong>3 800+ Projets realises</strong></h3>
           </div>
-        </div>
+        </div>  
       </div>
     </main>
+
     <!-- section comment ça marche -->
-    <section class="container py-5 ">
+    <section class="container py-5">
+      <div class="text-center mb-5">
       <h2>Comment ça marche</h2>
-        <div class="bento">
-          <div class="card card1">
-            <h2>01</h2>
+        <div class="row bento">
+          <div class="col-6 p-2">
+            <div class="card card1">
+            <h2 class="step-number text-primary">01</h2>
             <h3>Créer un compte</h3>
-            <i class="bi bi-person-plus"></i>
             <p>
-              Inscrivez-vous gratuitement en quelques <br />
-              minutes et créez votre profil en tant que <br />
-              client ou freelance.
+               Inscrivez-vous gratuitement <br> en quelques 
+                minutes et créez <br> votre profil en tant que 
+                client.
             </p>
+            </div>
           </div>
-          <div class="card card2">
-            <h2>02</h2>
+      
+           <div class="col-6 p-2">
+           <div class="card card2">
+            <h2 class="step-number text-success">02</h2>
             <h3>Choisir un freelance</h3>
-            <i class="bi bi-search"></i>
             <p>
               Parcourez les profils,consultez les <br />
               compétences,les avis et choisissez <br />
-              le freelances qui correspond à <br />
-              votre projet.
+              le freelances.<br />
             </p>
+        </div>
+             
           </div>
-          <div class="card card3">
-            <h2>03</h2>
+          <div class="col-4 ">
+            <div class="card card3">
+            <h2 class="step-number text-warning">03</h2>
             <h3>Discuter du projet</h3>
-            <i class="bi bi-chat-dots"></i>
             <p>
               Echangez avec la freelance, <br />
               définissez les détails,le budjet <br />
               et le delai pour votre projet.
             </p>
           </div>
-          <div class="card card4">
-            <h2>04</h2>
+          </div>
+
+         <div class="col-8">
+           <div class="card card4">
+            <h2 class="step-number purple-text">04</h2>
             <h3>Lancer le projet</h3>
-            <i class="bi bi-rocket"></i>
             <p>
-              Validez la collaboration et le freelance commence à travailler.
-              <br />
-              Suivez l'avancement et recevez un travail de qualite.
+              Validez la collaboration et le freelance. <br>
+              Suivez l'avancement et recevez un <br> travail de qualite.
             </p>
           </div>
+         </div>
         </div>
+      </div>
     </section>
     <!-- Section Services -->
      <section id="services">
@@ -150,7 +158,7 @@
                 <h3 class="text-center">Découvrez les talents pour tout vos besions</h3>
                 <div class="row py-5">
                     <div class="col-md-4 p-4 ">
-                        <div class="card text-center">
+                        <div class="card  num1 text-center">
                           <img src="images/programmation.png"  alt="" class="mx-auto d-block mt-3">
                         <div class="card-body">
                           <h3>Developpement Web</h3>
@@ -159,7 +167,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 p-4">
-                        <div class="card text-center">
+                        <div class="card num1 text-center">
                           <img src="images/en-hausse.png" alt="" class="mx-auto d-block mt-3">
                         <div class="card-body">
                           <h3>Design Graphique</h3>
@@ -168,16 +176,16 @@
                         </div>
                     </div>
                     <div class="col-md-4 p-4">
-                        <div class="card text-center">
+                        <div class="card  num1 text-center">
                           <img src="images/palette-de-couleurs.png"  alt="" class="mx-auto d-block mt-3">
                        <div class="card-body">
                          <h3>Marketing Digital</h3>
-                        <p>Reseaux sociaux, campagnes publicitaires. <br>3000freelances</p>
+                        <p>RS, campagnes publicitaires. <br>3000freelances</p>
                        </div>
                         </div>
                     </div>
                     <div class="col-md-4 p-4">
-                        <div class="card text-center">
+                        <div class="card  num1 text-center">
                           <img src="images/robot.png"  alt="" class="mx-auto d-block mt-3">
                         <div class="card-body">
                           <h3>Data & IA</h3>
@@ -186,7 +194,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 p-4">
-                        <div class="card text-center">
+                        <div class="card  num1 text-center">
                           <img src="images/storage.png" alt="" class="mx-auto d-block mt-3">
                         <div class="card-body">
                           <h3>Rédaction</h3>
@@ -195,7 +203,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 p-4">
-                        <div class="card text-center">
+                        <div class="card  num1 text-center">
                           <img src="images/upload.png"  alt="" class="mx-auto d-block mt-3">
                         <div class="card-body">
                           <h3>DevOp & Cloude</h3>
@@ -207,11 +215,79 @@
             </div>
         </section>
     <!-- Section Temoignages -->
-    <section class="container">
+    <section>
       <h2 class="text-center">Ce que disent nos clients</h2>
+    <div class="container testimonials bg-dark text-light py-5">
       <div id="carouselExample" class="carousel slide">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active text-center">
+            <img src="images//profil10.jpg" class="rounded-circle mb3" width="100" height="100" alt="..." />
+            <h5>Assane Diouf</h5>
+            <p>Une plate forme incroyables!</p>
+            <img src="./images/etoile.png"  width="25" height="25" alt="" /> <img src="./images/etoile.png"  width="25" height="25" alt="" /> <img src="./images/etoile.png"  width="25" height="25" alt="" /> <img src="./images/etoile.png"  width="25" height="25" alt="" />
+          </div>
+
+            <div class="carousel-item text-center">
+              <img src="images/membre12.jpg"  class="rounded-circle mb3" width="100" height="100" alt="..." />
+              <h5>Koura gueye</h5>
+            <p>Rapide et efficae je recommande</p>
+            <img src="./images/etoile.png" width="25" height="25" alt="" /> <img src="./images/etoile.png" width="25" height="25" alt="" /> <img src="./images/etoile.png" width="25" height="25" alt="" />
+            </div>
+
+            <div class="carousel-item text-center">
+              <img src="images/membre2.jpg"  class="rounded-circle mb3" width="100" height="100" alt="..." />
+              <h5>Sidi Fall</h5>
+            <p>Trés bon services</p>
+            <img src="./images/etoile.png" width="25" height="25" alt="" /> <img src="./images/etoile.png" width="25" height="25" alt="" /> <img src="./images/etoile.png" width="25" height="25" alt="" />
+            </div>
+             
+
+
+         <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+              
+
+          
+        </div>
+      </div>
+      </div>
+    </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <!-- <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">  
             <blockquote class="blockquote">
               <p>Trés bon services</p>
                <img src="./images/etoile.png"  width="25" height="25" alt="" /><img
@@ -256,7 +332,7 @@
               height="25"
               alt=""
             /><img src="./images/etoile.png" width="25" height="25" alt="" />
-            <img src="images/membre2.jpg" class="d-block w-100" alt="..." />
+            <img src=c class="d-block w-100" alt="..." />
           </div>
         </div>
         <button
@@ -277,7 +353,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> -->
     </section>
 
     <!-- section cta -->

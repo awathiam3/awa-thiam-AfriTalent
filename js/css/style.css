@@ -80,8 +80,9 @@ header{
 .icone4{
   color: purple;
 }
-.fictif{
+.statistique{
   font-family: var(--font-family-tire);
+  margin-top: -5rem;
 }
 .blockquote{
     height: 100vh ;
@@ -129,3 +130,46 @@ card4{
 .num1:hover{
   transform: scale(1.05);
 }
+               /* responsive design mobile et tablette, media queries */
+  @media (max-width: 375px) {
+    .profiles{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bento{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+  }
+
+  @media (max-width: 768px){
+    .profiles{
+      grid-template-columns: 1fr;
+    }
+    
+    .bento{
+      grid-template-columns: 1fr;
+    }
+    
+    h1{
+    font-size: 1.8rem;
+    }
+    h2{
+      font-size: 1.5rem;
+    }
+    h3{
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 0.9rem;
+    }
+    .statistique{
+      flex-direction: column;
+      gap: 0.3px;
+    }
+
+    .hero1{
+      padding: 20px;
+    }
+     
+  }

@@ -20,6 +20,8 @@ header{
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #212529; 
+  --bg-color: #ffffff;
+  --text-color: #000000;
   
   --font-family-tire:"Playfair", serif;
   --font-family-body:'poppins' ,sans-serif;
@@ -32,12 +34,13 @@ header{
   --text-md: 18px;
   --text-lg: 32px;
   --text-xl: 55px;
-    }
-    body{
-      background-color:#FFFDF2;
-      font-family: var(--font-family-body);
-    }
-    h1{
+  }
+body{
+  background-color:#FFFDF2;
+  font-family: var(--font-family-body);
+    
+  }
+  h1{
       font-size: var(--text-xl);
       font-family: var(--font-family-tire);
     }
@@ -48,10 +51,7 @@ header{
     .btn{
         background-color: var(--lighblue);
     }
-    .navbar-brand{
-      color: rgb(236, 157, 10);
-      font-size: 1.5rem; ;
-    }
+    
    .hero1{
    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/background.png');
    background-size: cover;
@@ -87,6 +87,9 @@ header{
 .blockquote{
     height: 100vh ;
     object-fit: cover;
+}
+main{
+  margin-top: 5rem;
 }
 
    /* ============bento grild============== */
@@ -173,3 +176,53 @@ card4{
     }
      
   }
+  .dark-mode{
+    background-color: #121212;
+    color: #f8f9fa;
+  }
+   .dark-btn{
+  margin-left: 20px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #212529;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dark-btn:hover{
+  background-color: #90b5ec;
+  transform: scale(1.05);
+}
+   /* =========navbar========== */
+   .navbar{
+    padding: 18px 30px;
+    transition: 0.5s;
+    background-color: transparent;
+   }
+   .navbar.scrolled{
+    background-color: #000;
+    padding: 8px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   }
+   /* ================bouton retour============ */
+   #topBtn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  padding: 12px 16px;
+  border: none;
+  border-radius: 50%;
+
+  background-color: #0d6efd;
+  color: white;
+
+  cursor: pointer;
+
+  display: none;
+
+  transition: 0.3s;
+}
+
+

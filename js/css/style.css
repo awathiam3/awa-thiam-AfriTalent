@@ -56,7 +56,7 @@ body{
    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/background.png');
    background-size: cover;
    background-position: center;
-   height: 100vh;
+   /* height: 100vh; */
    background-repeat: no-repeat;
    display: flex;
    flex-direction: column;
@@ -89,7 +89,7 @@ body{
     object-fit: cover;
 }
 main{
-  margin-top: 5rem;
+  margin-top: 5 rem;
 }
 
    /* ============bento grild============== */
@@ -224,5 +224,27 @@ card4{
 
   transition: 0.3s;
 }
+      /* =============compteur statistique et animation======== */
+  .statistique h4{
+    /* margin-top: 30px; */
+    font-size: 1.8rem;
+
+  }
+  .counter{
+    font-size: 40px;
+    font-weight: bold;
+    color: #e69b11;
+}
+
+.fade-in{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.9s;
+}
+.fade-in.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 

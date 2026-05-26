@@ -56,4 +56,70 @@ topBtn.addEventListener("click", () => {
   });
 
 });
+            /* =============compteur statistique et animation======== */
+
+const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver((entries) => {
+
+ entries.forEach(entry => {
+
+    if(entry.isIntersecting){
+
+      const counter = entry.target;
+
+      const target = +counter.getAttribute("data-target");
+
+      let count = 0;
+
+      const updateCounter = () => {
+
+        const increment = target / 100;
+
+        if(count < target){
+
+          count += increment;
+
+          counter.innerText = Math.floor(count);
+
+          requestAnimationFrame(updateCounter);
+
+        }
+
+        else{
+          counter.innerText = target;
+        }
+
+      };
+
+      updateCounter();
+
+      observer.unobserve(counter);
+
+    }
+
+  });
+
+});
+
+counters.forEach(counter => {
+  observer.observe(counter);
+});
           
+const fadeElements = document.querySelectorAll(".fade-in");
+
+const fadeObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+
+  });
+
+});
+
+fadeElements.forEach(element => {
+  fadeObserver.observe(element);
+});

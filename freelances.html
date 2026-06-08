@@ -45,28 +45,28 @@
         </nav>
     </header>
     <!-- ========= bare de filtre===== -->
-    <main class="container">
+    <main class="container filtrage">
     <div class="filtres">
-        <div class="row">
-            <div class="col col-md-6 col-lg-4 p-3">
-                <input type="text" class="form-con trol" placeholder="Recherche">
+             <div class="col col-md-6 col-lg-4 p-3">
             </div>
-            <select name="fre">
-                <option value="Développeur"></option>
-                <option value="Desig Graphique"></option>
-                <option value="Marketing Digital"></option>
-                <option value="Data et IA"></option>
-                <option value="Rédaction"></option>
-                <option value="Cloude et DevOps"></option>
-            </select>
-        </div>
-    </div>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('all')">Toutes les options</button>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('dev-web')">Développeur web</button>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('redactrice')">Rédactrice</button>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('uiux')">UI/UX Design</button>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('marketing')">Marketing Digital</button>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('data-ia')">Data et IA</button>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('community')">Community manager</button>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('graphiste')">Graphiste</button>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('copywriter')">Copywriter</button>
+                <button class="btn btn-primary m-1" onclick="filterFreelancers('dev-back-end')">Développeur Back-end</button>
+            </div>
+                
     </main>
     <!-- ======grille de profils=========== -->
     <section class="container py-5">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 p-3">
-                <div class="card profiles">
+            <div class="col-12 col-md-6 col-lg-4 p-3 freelancer dev-web">
+                <div class="card profiles" data-categoris="dev">
                     <img src="images/profil1 (2).jpg" class="card-text" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Ali Wade</h4>
@@ -75,11 +75,11 @@
                         <p><strong>15.000FCFA/h</strong><img src="./images/etoile.png" width="25" height="25" alt="">5</p>
                         <button class="btn btn-primary">Voir le profil</button>
 
-                    </div>
+                    </div> 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-3">
-                <div class="card w-100 profiles">
+            <div class="col-12 col-md-6 col-lg-4 p-3 freelancer redactrice">
+                <div class="card profiles" data-categoris="redactrice">
                     <img src="images/profil7.jpg" class="card-text" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Sokhna Diop</h4>
@@ -91,8 +91,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-3">
-                <div class="card w-100 profiles">
+            <div class="col-12 col-md-6 col-lg-4 p-3 freelancer uiux">
+                <div class="card profiles" data-categoris="uiux">
                     <img src="images/profil6.jpg" class="card-text" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Fatou Sow</h4>
@@ -103,8 +103,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-3">
-                <div class="card w-100 profiles">
+            <div class="col-12 col-md-6 col-lg-4 p-3 freelancer marketing">
+                <div class="card profiles" data-categoris="marketing">
                     <img src="images/profil1 (3).jpg" class="card-text" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Jean Paul</h4>
@@ -115,8 +115,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-3">
-                <div class="card w-100 profiles">
+            <div class="col-12 col-md-6 col-lg-4 p-3 freelancer data-ia">
+                <div class="card profiles" data-categoris="data-ia">
                     <img src="images/profil1 (4).jpg" class="card-text" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Ousseynou Diouf</h4>
@@ -127,20 +127,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-3">
-                <div class="card profiles">
+            <div class="col-12 col-md-6 col-lg-4 p-3 freelancer community">
+                <div class="card profiles" data-categoris="Community">
                     <img src="images/profil5.jpg" class="card-text" alt="">
                     <div class="card-body">
                         <h4 class="card-title">catherine</h4>
-                        <h5>Ccommunity manager</h5>
+                        <h5>Community manager</h5>
                         <p class="card-text">Gestion et animation.</p>
                         <p><strong>14.000FCFA/h</strong><img src="./images/etoile.png" width="25" height="25" alt="">4,4</p>
                         <button class="btn btn-primary">Voir le profil</button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-3">
-                <div class="card profiles">
+            <div class="col-12 col-md-6 col-lg-4 p-3 freelancer graphiste">
+                <div class="card profiles" data-categoris="graphiste">
                     <img src="images/profil11.jpg" class="card-text" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Ibrahima Fall</h4>
@@ -151,8 +151,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-3">
-                <div class="card profiles">
+            <div class="col-12 col-md-6 col-lg-4 p-3 freelancer copywriter">
+                <div class="card profiles" data-categoris="copywriter">
                     <img src="images/profil9.jpg" class="card-text" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Seynabou Sarr</h4>
@@ -163,11 +163,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4  p-3">
-                <div class="card profiles">
+            <div class="col-12 col-md-6 col-lg-4  p-3 freelancer dev-back-end">
+                <div class="card profiles" data-categoris="dev-back-end">
                     <img src="images/mage.jpg" class="card-text" alt="">
                     <div class="card-body">
-                        <h4 class="card-title">Ali Wade</h4>
+                        <h4 class="card-title">Awa thiam</h4>
                         <h5>Développeur Back-end</h5>
                         <p class="card-text">Bases de donnéeet serveurs.</p>
                         <p><strong>23.000FCFA/h</strong><img src="./images/etoile.png" width="25" height="25" alt="">5</p>

@@ -51,6 +51,15 @@ body{
     .btn{
         background-color: var(--lighblue);
     }
+    .tarif{
+      margin-top: 3rem;
+    }
+    .contact{
+      margin-top: 3rem;
+    }
+    .filtrage{
+      margin-top: 5rem;
+    }
     
    .hero1{
    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/background.png');
@@ -90,6 +99,25 @@ body{
 }
 main{
   margin-top: 5 rem;
+}
+
+.filters .btn{
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.filters .btn:hover{
+    transform: translateY(-2px);
+}
+
+
+
+.filters {
+   
+}
+.filters button {
+   
 }
 
    /* ============bento grild============== */
@@ -246,5 +274,16 @@ card4{
   transform: translateY(0);
 }
 
+   /* ============validation du formulaire de contact========== */
+.error{
+    color:red;
+    font-size:14px;
+}
+
+#successMessage{
+    color:green;
+    margin-top:15px;
+    text-align:center;
+}
 
 

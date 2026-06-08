@@ -45,22 +45,25 @@
         </nav>
     </header>
     <!-- ============formulaire============= -->
-    <main class="container">
+    <main class="container py-5 contact">
         <div class="row">
             <div class="col-md-6 col-12">
-                <form action="#">
+                <form id="contactForm">
                     <h2>Formulaire de contact</h2>
                     <div>
                         <label for="Nom">Nom</label>
-                        <input type="text" id="Nom" placeholder="Nom" class="form-control">
+                        <input type="text" id="name" placeholder="Nom" class="form-control">
+                        <span class="error" id="nameError"></span><br><br>
                     </div>
                     <div>
                         <label for="Prenom">Prenom</label>
                         <input type="text" id="Prenom" placeholder="Prenom" class="form-control">
+                        <span class="error" id="PrenomError"></span><br><br>
                     </div>
                     <div class="mb-3">
                         <label for="Email">Email</label>
-                        <input type="text" id="Email" placeholder="Email" class="form-control">
+                        <input type="text" id="email" placeholder="Email" class="form-control">
+                        <span class="error" id="emailError"></span><br><br>
                     </div>
                     <div class="mb-3">
                         <select class="form-control">
@@ -70,10 +73,12 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control" placeholder="Message"></textarea>
+                        <textarea class="form-control" success  id="message">message</textarea>
+                        <span class="error" id="messageError"></span>
                     </div>
                     <div class="d-flex justify-content-center"> 
-                        <button type="submit" class="btn ">Envoyer</button>
+                        <button type="submit" class="btn">Envoyer</button>
+                        <p id="successMessage"></p>
                     </div>
                 </form>
             </div>

@@ -11,6 +11,10 @@ header{
    background-color: #3873cc;
 
  }
+ header img{
+  height: 35px;
+  width: 35px;
+ }
  
 :root{
   --lighblue:hsl(195, 78%, 70%);
@@ -53,6 +57,9 @@ body{
     }
     .tarif{
       margin-top: 3rem;
+    }
+    .cardTarif{
+      border: 1px solid black;
     }
     .contact{
       margin-top: 3rem;
@@ -110,14 +117,8 @@ main{
 .filters .btn:hover{
     transform: translateY(-2px);
 }
-
-
-
-.filters {
-   
-}
-.filters button {
-   
+.cta h1{
+  color: #eb9b07f1;
 }
 
    /* ============bento grild============== */
@@ -267,7 +268,7 @@ card4{
 .fade-in{
   opacity: 0;
   transform: translateY(40px);
-  transition: 0.9s;
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 .fade-in.show{
   opacity: 1;
